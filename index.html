@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/imagenes/images.png" type="image/x-icon" >
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <a href="https://www.aluracursos.com/" target="_blank"><img src="/imagenes/unnamed.png" alt="Logo" class="logo-img"></a>
+            </div>
+        </header>
+    <main>
+        <div class="container">
+            <div class="input-section">
+                <textarea id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+                <i class="fa-solid fa-circle-exclamation" style="color: #011331;"> Solo letras minusculas y sin acentos</i>
+                <div class="buttons">
+                    <button id="encryptBtn">Encriptar</button>
+                    <button id="decryptBtn">Desencriptar</button>
+                    <button id="clearBtn" style="display: none;">Limpiar</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <div id="resultArea">
+                    <img src="/imagenes/Muñeco.png" alt="Muñeco" class="muneco-img">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button id="copyBtn" style="display: none;">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Encriptador de Texto desarrollado por Victor Manuel Gomez Z. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
